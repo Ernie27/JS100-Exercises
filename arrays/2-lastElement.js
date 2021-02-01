@@ -1,9 +1,9 @@
 // Write a function that returns the last element of an input array. For example:
 
+let last = ['Earth', 'Moon', 'Mars']; // 'Mars'
 
-function last(position) {
-  return position[position.length - 1];
+function lastElement(array) {
+  return array[array.length - 1];
 }
 
-console.log(last(['Earth', 'Moon', 'Mars'])); // 'Mars'
-
+console.log(lastElement(last));

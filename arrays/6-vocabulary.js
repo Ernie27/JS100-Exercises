@@ -4,14 +4,10 @@ let vocabulary = [
   ['excited', 'eager', 'enthused', 'animated']
 ];
 
-for (i = 0; i < vocabulary.length; i += 1) {
-  console.log(vocabulary[i][i]);
+for (let vocabularyIdx = 0; vocabularyIdx < vocabulary.length; vocabularyIdx++) {
+  let synonyms = vocabulary[vocabularyIdx];
+
+  for (let synonymIdx = 0; synonymIdx < synonyms.length; synonymIdx++) {
+    console.log(synonyms[synonymIdx]);
+  }
 }
-
-
-
-// Expected output:
-// happy
-// cheerful
-// merry
-// etc...
